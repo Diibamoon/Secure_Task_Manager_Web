@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+  <h1>Welcome, {{ user.username }}!</h1>
+  <p>You're logged in. This will be your tasks area.</p>
+
+  {% if user.profile.role == "admin" %}
+    <h2>Admin Panel</h2>
+    <p>You can view audit logs and manage users.</p>
+
+    {% if users %}
+      <h3>User List</h3>
+      <table border="1" cellpadding="5">
+        <tr>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Is Staff</th>
+        </tr>
+        {% for u in users %}
+        <tr>
+          <td>{{ u.username }}</td>
+          <td>{{ u.email }}</td>
+          <td>{{ u.is_staff }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    {% else %}
+      <p>No users found.</p>
+    {% endif %}
+  {% else %}
+  <h2>User Dashboard</h2>
+  <p>Welcome back, {{ user.first_name|default:user.username }}! Hope you're having a productive day.</p>
+
+  <!-- User Info Summary -->
+  <h3>Your Profile</h3>
+  <ul>
+    <li><strong>Username:</strong> {{ user.username }}</li>
+    <li><strong>Email:</strong> {{ user.email }}</li>
+    <li><strong>Role:</strong> {{ user.profile.role }}</li>
+  </ul>
+
+  <!-- Recent Login -->
+  <p><strong>Last login:</strong> {{ user.last_login }}</p>
+
+  <!-- Tasks Section -->
+  <h3>Your Tasks</h3>
+  <a href="{% url 'create_task' %}">➕ Create New Task</a>
+  <ul>
+    {% for task in tasks %}
+      <li>
+        <strong>{{ task.title }}</strong> - {{ task.description }}
+        <small>(Created: {{ task.created_at }})</small>
+        <a href="{% url 'edit_task' task.id %}">✏️ Edit</a>
+        <a href="{% url 'delete_task' task.id %}">🗑️ Delete</a>
+      </li>
+    {% empty %}
+      <li>No tasks yet.</li>
+    {% endfor %}
+  </ul>
+  {% endif %} 
+{% endblock %}

@@ -1,0 +1,199 @@
+Watching for file changes with StatReloader
+"GET /login/ HTTP/1.1" 200 1384
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4325
+"GET /login/ HTTP/1.1" 200 1384
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1760
+"GET /audit-log HTTP/1.1" 301 0
+"GET /audit-log/ HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/audit-log/ HTTP/1.1" 404 4354
+Not Found: /does-not-exist
+"GET /does-not-exist HTTP/1.1" 404 4334
+"GET /audit-log/ HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/audit-log/ HTTP/1.1" 404 4354
+C:\Users\alisamuhamad\Desktop\secure_web\secure_web\tasks\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/audit-log/ HTTP/1.1" 404 4354
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/audit-log/ HTTP/1.1" 404 4354
+Forbidden (Permission denied): /audit-log/
+Traceback (most recent call last):
+  File "C:\Users\alisamuhamad\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alisamuhamad\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alisamuhamad\AppData\Roaming\Python\Python314\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\alisamuhamad\Desktop\secure_web\secure_web\tasks\views.py", line 58, in audit_log
+    raise PermissionDenied  # This triggers your 403.html
+    ^^^^^^^^^^^^^^^^^^^^^^
+django.core.exceptions.PermissionDenied
+"GET /audit-log/ HTTP/1.1" 403 803
+"GET / HTTP/1.1" 200 1760
+Not Found: /does-not-exist
+"GET /does-not-exist HTTP/1.1" 404 4334
+"GET /tasks/create/ HTTP/1.1" 200 1180
+"GET / HTTP/1.1" 200 1760
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 1455
+C:\Users\alisamuhamad\Desktop\secure_web\secure_web\tasks\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/ HTTP/1.1" 404 4344
+"GET /login HTTP/1.1" 301 0
+"GET /login/ HTTP/1.1" 200 1384
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1423
+"GET /audit-log/ HTTP/1.1" 200 5211
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 1455
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1760
+"GET /tasks/edit/5/ HTTP/1.1" 200 1201
+"POST /tasks/edit/5/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1835
+"GET /tasks/delete/5/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1600
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 1455
+"GET /register/ HTTP/1.1" 200 2384
+"GET /login/ HTTP/1.1" 200 1384
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1423
+"GET /audit-log/ HTTP/1.1" 200 5958
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 1455
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1525
+Forbidden (Permission denied): /audit-log/
+Traceback (most recent call last):
+  File "C:\Users\alisamuhamad\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alisamuhamad\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alisamuhamad\AppData\Roaming\Python\Python314\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\alisamuhamad\Desktop\secure_web\secure_web\tasks\views.py", line 58, in audit_log
+    raise PermissionDenied  # This triggers your 403.html
+    ^^^^^^^^^^^^^^^^^^^^^^
+django.core.exceptions.PermissionDenied
+"GET /audit-log/ HTTP/1.1" 403 803
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 1455
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/ HTTP/1.1" 404 4344
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4325
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/ HTTP/1.1" 404 4344
+"GET /audit-log/ HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/audit-log/ HTTP/1.1" 404 4354
+"GET /audit-log/ HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/audit-log/ HTTP/1.1" 404 4354
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/ HTTP/1.1" 404 4344
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4325
+"GET /audit-log/ HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/audit-log/ HTTP/1.1" 404 4354
+"GET /audit-log/ HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/audit-log/ HTTP/1.1" 404 4354
+"GET /audit-log/ HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/audit-log/ HTTP/1.1" 404 4354
+"GET /login/ HTTP/1.1" 200 1384
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1423
+"GET / HTTP/1.1" 200 1423
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 1455
+"POST /login/ HTTP/1.1" 200 1541
+"POST /login/ HTTP/1.1" 200 1541
+"POST /login/ HTTP/1.1" 200 1541
+"GET /login/ HTTP/1.1" 200 1384
+Not Found: /login/audit-log
+"GET /login/audit-log HTTP/1.1" 404 4337
+Not Found: /login/audit-log/
+"GET /login/audit-log/ HTTP/1.1" 404 4340
+"GET /login/ HTTP/1.1" 200 1384
+"GET / HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/ HTTP/1.1" 404 4344
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4325
+Not Found: /accounts/login
+"GET /accounts/login HTTP/1.1" 404 4334
+"GET /login HTTP/1.1" 301 0
+"GET /login/ HTTP/1.1" 200 1384
+"GET /audit-log/ HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/audit-log/ HTTP/1.1" 404 4354
+"GET /audit-log/ HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/audit-log/ HTTP/1.1" 404 4354
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/ HTTP/1.1" 404 4344
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4325
+Not Found: /llogin/
+"GET /llogin/ HTTP/1.1" 404 4313
+"GET /login/ HTTP/1.1" 200 1384
+"POST /login/ HTTP/1.1" 200 1541
+"GET /login/ HTTP/1.1" 200 1384
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1423
+"GET / HTTP/1.1" 200 1423
+"GET /audit-log/ HTTP/1.1" 200 6690
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 1455
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1525
+Forbidden (Permission denied): /audit-log/
+Traceback (most recent call last):
+  File "C:\Users\nurfi\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurfi\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurfi\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurfi\Desktop\secure_web (COMPLETED)\secure_web\secure_web\tasks\views.py", line 58, in audit_log
+    raise PermissionDenied  # This triggers your 403.html
+    ^^^^^^^^^^^^^^^^^^^^^^
+django.core.exceptions.PermissionDenied
+"GET /audit-log/ HTTP/1.1" 403 803
+"GET / HTTP/1.1" 200 1525
+"GET /tasks/create/ HTTP/1.1" 200 1180
+"GET / HTTP/1.1" 200 1525
+"GET / HTTP/1.1" 200 1525
+"GET /tasks/create/ HTTP/1.1" 200 1180
+"POST /tasks/create/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1854
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 1455
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1514
+"GET /tasks/create/ HTTP/1.1" 200 1180
+"POST /tasks/create/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1822
+"GET / HTTP/1.1" 200 1747
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 1455
