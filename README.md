@@ -36,7 +36,24 @@ This project is a secure web-based task management system developed using Django
 ### Steps to Run
 
 1. Clone the repository:
+   https://github.com/Diibamoon/Secure_Task_Manager_Web.git
+2. Navigate to the project directory:
+3. Create and activate a virtual environment:
+4. Install required dependencies:
+5. Create environment configuration file:
+- Copy `.env.example`
+- Rename it to `.env`
+- Configure required values
 
+6. Apply database migrations:
+7. Create admin account:
+8. Run the application:
+9. Open browser and access:
+    http://127.0.0.1:8000/
+---
+### Default Roles
+- **Admin**: Can view audit logs and manage users
+- **Normal User**: Can manage personal tasks only
 
 ## Dependencies
 - Django
